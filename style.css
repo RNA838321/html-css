@@ -14,10 +14,30 @@
 #div1 {
     background-color: #d6ecf5;
     height: 200px;
+    position: relative;
 }
 .cloud {
     width: 200px;
     background-color: #d6ecf5;
+    animation-name: cloud;
+    animation-duration: 45s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+.cloud1 {
+    width: 150px;
+    background-color: transparent;
+    animation-name: cloud1;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /*=====================div2 codes==================== */
@@ -29,9 +49,8 @@
 /* grass codes */
 .grass1 {
     width: 500px;
-    background-color: green;
+    background-color:green;
     background-size: contain;
-    
 }
 /*====rabbit code======*/
 .grass2 {
@@ -48,21 +67,73 @@
     border-bottom: 6px solid lightgray;
     position: relative;
 }
+#div3 p {
+    padding: 0;
+    margin: 0;
+    color: red;
+}
 .inner-div3 {
     width: 100%;
     position: relative;
-    top: 120px;
+    top: 100px;
     border: 6px solid white;
+    text-align: center;
+    font-size: 10px;
 }
 .mario {
-    width: 80px;
+    width: 60px;
     background: gray;
     position: relative;
-    top: 23px;
+    top: 11px;
+    animation-name: mario;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
 }
 .luigi {
-    width: 70px;
+    width: 50px;
     background: gray;
     position: relative;
-    top: 117px;
+    top: 125px;
+    animation-name: luigi;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+/*==============keyframes=========*/
+@keyframes mario {
+    from {
+        transform: translate(-1000px);
+    }
+    to {
+        transform: translate(1400px);
+    }
+}
+@keyframes luigi {
+    from {
+        transform: translate(-500px);
+    }
+    to {
+        transform: translate(1400px);
+    }
+}
+@keyframes cloud {
+    from {
+        transform: translate(-100px);
+    }
+    to {
+        transform: translate(1400px);
+    }
+}
+@keyframes cloud1 {
+    from {
+        transform: translate(-100px);
+    }
+    to {
+        transform: translate(1400px);
+    }
 }
