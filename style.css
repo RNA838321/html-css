@@ -60,7 +60,7 @@
 
 /*================div3 codes*=======================*/
 #div3 {
-    background-color: gray;
+    background-color: rgb(25, 23, 23);
     height: 225px;
     position: relative;
     border-top: 6px solid lightgray;
@@ -82,11 +82,12 @@
 }
 .mario {
     width: 60px;
-    background: gray;
+    background: transparent;
     position: relative;
     top: 11px;
     animation-name: mario;
     animation-duration: 7s;
+    animation-delay: 0s;
     animation-timing-function: linear;
     animation-fill-mode: both;
     animation-direction: normal;
@@ -94,7 +95,7 @@
 }
 .luigi {
     width: 50px;
-    background: gray;
+    background: transparent;
     position: relative;
     top: 125px;
     animation-name: luigi;
