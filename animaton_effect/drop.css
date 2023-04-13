@@ -13,6 +13,14 @@
     top: 200px;
     left: 500px;
 }
+.inner {
+    animation-name: drop;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform-origin: top left;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
 .inner .kunfu {
     position: relative;
     top: 40px;
@@ -74,3 +82,25 @@
     font-size: 0.1;
 }
 /*==================keyframe design==============*/
+@keyframes drop {
+    0% {
+        transform: translateY(200px);
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: translateY(200px);
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: translateY(200px);
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: translateY(200px);
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: translateY(200px);
+        transform: rotate(360deg);
+    }
+}
