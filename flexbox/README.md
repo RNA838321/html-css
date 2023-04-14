@@ -1,1 +1,1 @@
-This directory contains flex box projects
+this directory contains projects on flexbox

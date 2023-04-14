@@ -42,4 +42,38 @@ nav:hover {
     nav li {
         flex: 1 1 0;
     }
+    .social {
+        margin: 0;
+    }
+}
+/**=============social media based menu================*/
+a.tw {
+    background-image: url('../animaton_effect/images/tw.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+a.fb {
+    background-image: url('../animaton_effect/images/fb.png');
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+.social a {
+    text-indent: -10000px;
+}
+.social {
+    max-width: 80px;
+    margin: 0;
+}
+/******************fles styles*************************/
+nav ul.social {
+    flex: 1 1 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul.social li {
+    flex: 1 1 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
 }
