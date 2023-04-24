@@ -1,0 +1,1 @@
+this folder carries css practice projects related to css aniamtions
